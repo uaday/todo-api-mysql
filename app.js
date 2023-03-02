@@ -2,11 +2,12 @@ const mysql = require('mysql');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+// need to add those field, can find in the RDS
 const db = mysql.createConnection({
-  host: 'test-db-1.cyohi0itdmls.ap-south-1.rds.amazonaws.com',
-  user: 'admin',
-  password: 'Qwer1234#',
-  database: 'tododb',
+  host: '',
+  user: '',
+  password: '',
+  database: '',
 });
 
 db.connect((err) => {
